@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Counter-Strike Inferno マップのスモークの投げ方ガイド">
+    <meta name="keywords" content="Counter-Strike, CS2, Inferno, スモーク, ラインナップ">
+    <title>Inferno - スモークガイド</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ancient.html">Ancient</a></li>
+                <li><a href="../anubis.html">Anubis</a></li>
+                <li><a href="../dust2.html">Dust 2</a></li>
+                <li><a href="../inferno.html">Inferno</a></li>
+                <li><a href="../mirage.html">Mirage</a></li>
+                <li><a href="../nuke.html">Nuke</a></li>
+                <li><a href="../train.html">Train</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Inferno - スモークガイド</h1>
+        <hr>
+        <div class="tweets-container">
+            <div class="setup-card">
+                <h3>Coffins スモーク</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/coffin1.jpg" 
+                                 alt="Inferno Coffins スモーク"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/coffin2.jpg" 
+                                 alt="Inferno Coffins スモーク"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>縦軸は黄丸の内側の右側にシミがあるのでその左にクロスヘアーを合わせる<br>
+                           横軸は赤丸の棒に合わせる</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/coffin3.jpg" 
+                                 alt="Inferno Coffins スモーク"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>ctスモーク</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/ct1.jpg" 
+                             alt="Inferno ct スモーク"
+                             onclick="openModal(this.src)">
+                        </div >
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/ct2.jpg" 
+                             alt="Inferno ct スモーク"
+                             onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>外回りスモーク</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/stmwr1.jpg" 
+                             alt="Inferno 外回り スモーク"
+                             onclick="openModal(this.src)">
+                        </div >
+                        <p>黄色の線と直角になるように体を合わせる（クロスヘアーのある面が見えなくなる位置。）</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_inferno/smoke/stmwr2.jpg" 
+                             alt="Inferno 外回り スモーク"
+                             onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- モーダル -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <img class="modal-content" id="modalImage">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Counter-Strike 投げ物ガイド. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // ESCキーでモーダルを閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 
