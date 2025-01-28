@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoru Fracture コンビネーションセットアップ集</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yoru - Fracture コンビネーションセットアップ</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="./YoruFracture.html">Yoru-Fracture</a></li>
+                <li><a href="../ascent.html">Ascent</a></li>
+                <li><a href="../bind.html">Bind</a></li>
+                <li><a href="../breeze.html">Breeze</a></li>
+                <li><a href="../fracture.html">Fracture</a></li>
+                <li><a href="../haven.html">Haven</a></li>
+                <li><a href="../icebox.html">Icebox</a></li>
+                <li><a href="../lotus.html">Lotus</a></li>
+                <li><a href="../pearl.html">Pearl</a></li>
+                <li><a href="../split.html">Split</a></li>
+                <li><a href="../sunset.html">Sunset</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="combinations" class="ability-section">
+            <h2>コンビネーション</h2>
+            <div class="tweets-container">
+                <article class="setup-card">
+                    <h3>Bサイトへのセットアップ</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BsiteSetup1.jpg" 
+                                     alt="Bサイトへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>赤線に合わせて張り付く</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BsiteSetup2.jpg" 
+                                     alt="Bサイトへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>赤線の少し左に合わせる</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BsiteSetup3.jpg" 
+                                     alt="Bサイトへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>角に張り付く</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BsiteSetup4.jpg" 
+                                     alt="Bサイトへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>縦軸は赤線に合わせる、横軸は黄線の中なら恐らくミスしない</p>
+                        </div>
+                    </div>
+                    <h3>開幕Bアーケードへのセットアップ</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BarcadeSetup1.jpg" 
+                                     alt="Bアーケードへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>aimしている角に合わせる(斜めになってるので少し合わせづらい)</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BarcadeSetup2.jpg" 
+                                     alt="Bアーケードへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>赤線にaimして大体フリーズタイム3秒前にTpを出す(3秒以上前にTpを出すとスタックする可能性がある)</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BarcadeSetup3.jpg" 
+                                     alt="Bアーケードへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>赤線が重なる位置にaimを合わせ、1分37秒にフラッシュを出して爆発するタイミングでTpする</p>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BarcadeSetup4.jpg" 
+                                     alt="Bアーケードへのセットアップ"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>大体この位置にTpする</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>※これらのセットアップは一例です。マップやゲーム状況に応じて臨機応変に対応することが重要です。</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // ESCキーでモーダルを閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoru Fracture セットアップ集</title>
-    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
     <header>
-        <h1>Yoru - Fracture セットアップ</h1>
+        <h1>Yoru - Fracture</h1>
         <nav>
             <ul>
                 <li><a href="../../index.html">ホーム</a></li>
@@ -28,79 +28,51 @@
     
 
     <main>
+        
        
 
-        <section id="teleports" class="ability-section">
-            <h2>テレポートのセットアップ</h2>
-            <div class="setup-container">
-                <article class="setup-card">
-                    <h3>Aのドアをずっと開けておくセットアップ</h3>
-                    <div class="setup-images">
-                        <img src="../../images/fracture/yoru/teleport_drop.jpg" alt="ドロップからのテレポート位置" 
-                             style="max-width: 100%; height: auto;"
-                    </div>
-                </article>
-                <!-- 他のテレポートセットアップをここに追加 -->
-            </div>
+        <section class="ability-section">
+            <h2><a href="./Tp.html">テレポートのセットアップ</a></h2>
         </section>
+        <hr>    
+        <section class="ability-section">
+            <h2><a href="./Flash.html">フラッシュのセットアップ</a></h2>
+        </section>
+        <hr>
 
-        <section id="flashes" class="ability-section">
-            <h2>フラッシュのセットアップ</h2>
-            <div class="setup-container">
-                <article class="setup-card">
-                    <h3>なんも決めてない</h3>
-                    <div class="setup-images">
-                        <img src="../../images/fracture/yoru/flash1_position.jpg" alt="開始位置">
-                        <img src="../../images/fracture/yoru/flash1_lineup.jpg" alt="照準位置">
-                        <img src="../../images/fracture/yoru/flash1_result.jpg" alt="フラッシュ効果範囲">
-                    </div>
-                    <div class="setup-description">
-                        <p>これサンプルBサイトへの入り口を制圧するための効果的なフラッシュ</p>
-                        <ol>
-                            <li>メインエントリーの角に立つ</li>
-                            <li>照準を画像の位置に合わせる</li>
-                            <li>フラッシュを投げ、敵の視界を奪う</li>
-                        </ol>
-                    </div>
-                </article>
-                <!-- 他のフラッシュセットアップをここに追加 -->
-            </div>
+        <section class="ability-section">
+            <h2><a href="./Combo.html">コンビネーション</a></h2>
         </section>
-
-        <section id="combinations" class="ability-section">
-            <h2>コンビネーション</h2>
-            <div class="setup-container">
-                <article class="setup-card">
-                    <h3>テレポート + フラッシュ コンボ</h3>
-                    <div class="setup-images">
-                        <div class="youtube-embed">
-                            <iframe
-                                src="https://www.youtube.com/embed/aM8cVVpL41w"
-                                title="Yoru Setup on Fracture"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="setup-images">
-                            <div class="youtube-embed">
-                                <iframe
-                                    src="https://www.youtube.com/embed/BAnvEm6LXzI"
-                                    title="Yoru Setup on Fracture"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+        
     </main>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <footer>
         <p>※これらのセットアップは一例です。マップやゲーム状況に応じて臨機応変に対応することが重要です。</p>
     </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // ESCキーでモーダルを閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>

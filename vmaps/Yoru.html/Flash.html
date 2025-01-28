@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoru Fracture フラッシュセットアップ集</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yoru - Fracture フラッシュセットアップ</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="./YoruFracture.html">Yoru-Fracture</a></li>
+                <li><a href="../ascent.html">Ascent</a></li>
+                <li><a href="../bind.html">Bind</a></li>
+                <li><a href="../breeze.html">Breeze</a></li>
+                <li><a href="../fracture.html">Fracture</a></li>
+                <li><a href="../haven.html">Haven</a></li>
+                <li><a href="../icebox.html">Icebox</a></li>
+                <li><a href="../lotus.html">Lotus</a></li>
+                <li><a href="../pearl.html">Pearl</a></li>
+                <li><a href="../split.html">Split</a></li>
+                <li><a href="../sunset.html">Sunset</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashes" class="ability-section">
+            <h2>フラッシュのセットアップ</h2>
+            <div class="tweets-container">
+                <article class="setup-card">
+                    <h3>Bmain開幕フラッシュピーク(Defender)</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BmainFlash.jpg" 
+                                     alt="開始位置"
+                                     onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Amainフラッシュピーク(Defender)</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/AmainFlash1.jpg" 
+                                     alt="開始位置"
+                                     onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/AmainFlash2.jpg" 
+                                     alt="開始位置"
+                                     onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/AmainFlash3.jpg" 
+                                     alt="開始位置"
+                                     onclick="openModal(this.src)">
+                                <p>大体赤丸の位置でフラッシュが爆発する</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Bタワーフラッシュ</h3>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <div class="setup-images">
+                                <img src="../../images/fracture/yoru/BtowerFlash.jpg" 
+                                     alt="開始位置"
+                                     onclick="openModal(this.src)">
+                            </div>
+                            <p>縦軸は大体赤丸の三角の角に合わせて投げれば自分は食らわずにピークできる</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>※これらのセットアップは一例です。マップやゲーム状況に応じて臨機応変に対応することが重要です。</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // ESCキーでモーダルを閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
