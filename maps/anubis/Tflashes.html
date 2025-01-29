@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Counter-Strike Anubis マップのフラッシュバンの投げ方ガイド">
+    <meta name="keywords" content="Counter-Strike, CS2, Anubis, フラッシュバン, ラインナップ">
+    <title>Anubis - フラッシュバンガイド</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ancient.html">Ancient</a></li>
+                <li><a href="../anubis.html">Anubis</a></li>
+                <li><a href="../dust2.html">Dust 2</a></li>
+                <li><a href="../inferno.html">Inferno</a></li>
+                <li><a href="../mirage.html">Mirage</a></li>
+                <li><a href="../nuke.html">Nuke</a></li>
+                <li><a href="../train.html">Train</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Anubis - フラッシュバンガイド</h1>
+        <div class="tweets-container">
+            <article class="setup-card">
+                <h3>Tsideフラッシュバン</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Amainflash1.jpg" 
+                                 alt="Tsideフラッシュバン"
+                                 onclick="openModal(this.src)">
+                                 <p>赤丸の模様の一番左と青線の角を合わせてaimしてからジャンプ投げ</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Amainflash2.jpg" 
+                                 alt="Tsideフラッシュバン"
+                                 onclick="openModal(this.src)">
+                                 <p>大体aimの位置で爆発する</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Amainflash3.jpg" 
+                                 alt="Tsideフラッシュバン"
+                                 onclick="openModal(this.src)">
+                                 <p>この角はブラインドしない</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Amainflash4.jpg" 
+                                 alt="Tsideフラッシュバン"
+                                 onclick="openModal(this.src)">
+                                 <p>ここも同様にブラインドしない</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>Asite挟むフラッシュ</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Asite1.jpg" 
+                                 alt="Asite挟むフラッシュ"
+                                 onclick="openModal(this.src)">
+                                 <p>赤の壁に当てる様に投げる、高さはaimの位置（少し走り投げ）</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Asite2.jpg" 
+                                 alt="Asite挟むフラッシュ"
+                                 onclick="openModal(this.src)">
+                                 <p>大体この位置で爆発する</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Asite3.jpg" 
+                                 alt="Asite挟むフラッシュ"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_flash/Asite4.jpg" 
+                                 alt="Asite挟むフラッシュ"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Counter-Strike 投げ物ガイド. All rights reserved.</p>
+    </footer>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 

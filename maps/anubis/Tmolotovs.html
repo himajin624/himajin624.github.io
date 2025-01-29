@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Counter-Strike Anubis マップのモロトフの投げ方ガイド">
+    <meta name="keywords" content="Counter-Strike, CS2, Anubis, モロトフ, ラインナップ">
+    <title>Anubis - モロトフガイド</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ancient.html">Ancient</a></li>
+                <li><a href="../anubis.html">Anubis</a></li>
+                <li><a href="../dust2.html">Dust 2</a></li>
+                <li><a href="../inferno.html">Inferno</a></li>
+                <li><a href="../mirage.html">Mirage</a></li>
+                <li><a href="../nuke.html">Nuke</a></li>
+                <li><a href="../train.html">Train</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Anubis - モロトフガイド</h1>
+        <div class="tweets-container">
+            <article class="setup-card">
+                <h3>Bsite柱molotov</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bhasira1.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>立ち位置は大体のところで入る<br>ミニマップの黒いシミが柱なので位置調整をする<br>赤線の影に合わせてジャンプ投げ（黄丸の壁は斜めになっている所があるので注意）</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bhasira2.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>大体この位置で燃える</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>Bsitemolotov</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bsite.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>階段の上り始めが立ち位置</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bsite1.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>画像の様に柱が2本見える位置でaimを合わせて投げる（見えづらいが赤線で柱を囲っている）</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bsite2.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>大体この位置で燃える</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/cs_anubis/T_molotov/Bsite3.jpg" 
+                                 alt="Bsite柱molotov"
+                                 onclick="openModal(this.src)">
+                                 <p>柱が3本見えるとミスする確率が上がる</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Counter-Strike 投げ物ガイド. All rights reserved.</p>
+    </footer>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body> 
+</html> 
