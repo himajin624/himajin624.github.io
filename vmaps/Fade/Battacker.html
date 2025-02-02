@@ -12,6 +12,7 @@
         <nav>
             <ul>
                 <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="./Attacker.html">Fade Attacker</a></li>
                 <li><a href="../ascent.html">Ascent</a></li>
                 <li><a href="../bind.html">Bind</a></li>
                 <li><a href="../breeze.html">Breeze</a></li>
@@ -25,18 +26,60 @@
     </header>
 
     <main>
-        <h1>Fade - Lotus セットアップ</h1>
-        <section class="ability-section">
-            <h2><a href="./Attacker.html">Attacker</a></h2>
-        </section>
-
-        <section class="ability-section">
-            <h2><a href="./Defender.html">Defender</a></h2>
-        </section>
+       <section id="BattackerHaunt" class="ability-section">
+        <h2>Bのホウント</h2>
+        <div class="tweets-container">
+            <article class="setup-card">
+                <h3>Bsite</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/attacker/B/Bsite1.jpg" 
+                                 alt="Bsite"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>角に立つ</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/attacker/B/Bsite2.jpg" 
+                                 alt="Bsite"
+                                 onclick="openModal(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </article>
+        </div>
+       </section>
     </main>
+
+    <!-- モーダル -->  
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <footer>
         <p>&copy; 2024 VALORANT マップガイド</p>
     </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        }); 
+    </script>
 </body>
 </html>
