@@ -94,15 +94,14 @@ h2 {
 
 .image-container {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .image-item {
-    flex: 0 1 400px;  /* コンテナサイズも対応して調整 */
-    text-align: center;
+    flex: 1 1 300px;  /* 最小幅300pxで伸縮可能 */
+    max-width: 400px;
 }
 
 .image-item p {
@@ -126,9 +125,15 @@ footer {
     .image-container {
         flex-direction: column;
     }
-
+S
     .setup-images img {
         width: 100%;
         max-width: 600px;  /* モバイル表示でも同じサイズを維持 */
     }
+}
+
+.setup-images img {
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade - Attacker</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fade - Attacker</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ascent.html">Ascent</a></li>
+                <li><a href="../bind.html">Bind</a></li>
+                <li><a href="../breeze.html">Breeze</a></li>
+                <li><a href="../fracture.html">Fracture</a></li>
+                <li><a href="../lotus.html">Lotus</a></li>
+                <li><a href="../pearl.html">Pearl</a></li>
+                <li><a href="../split.html">Split</a></li>
+                <li><a href="../sunset.html">Sunset</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fade - Attacker</h1>
+        <section class="ability-section">
+            <h2><a href="./Aattacker.html">Asite</a></h2>
+            <h2><a href="./Battacker.html">Bsite</a></h2>
+            <h2><a href="./Cattacker.html">Csite</a></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VALORANT マップガイド</p>
+    </footer>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>     
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }   
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 

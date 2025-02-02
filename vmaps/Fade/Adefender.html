@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade - Lotus セットアップ</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fade - Lotus セットアップ</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ascent.html">Ascent</a></li>
+                <li><a href="../bind.html">Bind</a></li>
+                <li><a href="../breeze.html">Breeze</a></li>
+                <li><a href="../fracture.html">Fracture</a></li>
+                <li><a href="../lotus.html">Lotus</a></li>
+                <li><a href="../pearl.html">Pearl</a></li>
+                <li><a href="../split.html">Split</a></li>
+                <li><a href="../sunset.html">Sunset</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="ADefenderHaunt" class="ability-section">
+        <h2>Aのホウント</h2>
+        <div class="tweets-container">
+            <article class="setup-card">
+                <h3>A開幕のホウント</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Akaimaku1.jpg" 
+                                 alt="A開幕のホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>黄丸が見えなくなるように赤線の角に合わせる</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Akaimaku2.jpg" 
+                                 alt="A開幕のホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>ジャンプ投げ</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Akaimaku4.jpg" 
+                                 alt="A開幕のホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>同じ立ち位置で前進しながらジャンプ投げ（ガレキは見えない）</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Akaimaku5.jpg" 
+                                 alt="A開幕のホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>フリーズタイム中の壁左奥に張り付いてジャンプ投げ（ガレキ見える時がある）</p>
+                    </div>
+                </div>
+                <hr>
+                <h3>A壁抜きホウント</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Tree1.jpg" 
+                                 alt="A壁抜きホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>黄丸の面を見えなくなるように赤線の角に合わせる</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/A/Tree2.jpg" 
+                                 alt="A壁抜きホウント"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>赤丸の黒くなっているところにジャンプ投げ</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+       </section>
+    </main>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VALORANT マップガイド</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        }); 
+    </script>    
+</body>
+</html>

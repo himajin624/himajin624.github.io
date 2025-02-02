@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade - Lotus セットアップ</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fade - Lotus セットアップ</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../ascent.html">Ascent</a></li>
+                <li><a href="../bind.html">Bind</a></li>
+                <li><a href="../breeze.html">Breeze</a></li>
+                <li><a href="../fracture.html">Fracture</a></li>
+                <li><a href="../lotus.html">Lotus</a></li>
+                <li><a href="../pearl.html">Pearl</a></li>
+                <li><a href="../split.html">Split</a></li>
+                <li><a href="../sunset.html">Sunset</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="CDefenderHaunt" class="ability-section">
+        <h2>Cのホウント</h2>
+        <hr>
+        <div class="tweets-container">
+            <article class="setup-card">
+                <h3>Cretake</h3>
+                <div class="image-container">
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/C/Cretake1.jpg" 
+                                 alt="Cretake"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>aimしている壁に張り付く</p>
+                    </div>
+                    <div class="image-item">
+                        <div class="setup-images">
+                            <img src="../../images/lotus/fade/defender/C/Cretake2.jpg" 
+                                 alt="Cretake"
+                                 onclick="openModal(this.src)">
+                        </div>
+                        <p>赤丸内の角に合わせて投げる</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <hr>
+        </section>
+    </main>
+
+    <!-- モーダル -->
+    <div id="imageModal" class="modal" onclick="closeModal()"> 
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VALORANT マップガイド</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
