@@ -78,8 +78,9 @@ class BlockBreaker:
     
     def update(self):
         """ゲームの状態を更新"""
-        #if self.shop.visible:
-        #    return
+        # ショップが表示されている場合は更新をスキップ
+        if self.shop.visible:
+            return
         
         # 衝突フラグをリセット
         self.collision_occurred = False
@@ -110,7 +111,7 @@ class BlockBreaker:
             self.reset_game()
         
         # ステージクリア判定
-        if len(self.blocks) == 0:
+        if len(self.blocks) == 0 and not self.stage_manager.stage_cleared:
             self.stage_manager.stage_cleared = True
             print("ステージクリア！")  # 追加
             # ステージクリア時にショップを表示
